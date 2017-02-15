@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/surabhiagrawal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_dc0131aee3c3175de9e9fb8e50834a8f3ac286a0.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_67167e0f65a87863a7e43b24063e7ed3c5aee86c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/surabhiagrawal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_dc0131aee3c3175de9e9fb8e50834a8f3ac286a0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,15 +66,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="03881e5c9573abec8007769ffb348356233854c7">
-        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.1.0_e2d9c1b521f8fff95a0b262b78c82a470c06b483.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/surabhiagrawal/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
         jumboMode="false"
         optimize="true"
@@ -90,6 +81,15 @@
         revision="25.0.2"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
         <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_3b273e827efe677e0b9922e25311f1ca2f9994a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03881e5c9573abec8007769ffb348356233854c7">
+        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.1.0_e2d9c1b521f8fff95a0b262b78c82a470c06b483.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,21 +165,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/surabhiagrawal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/okio-1.6.0_ce7e791a2a402671a256246382d86f28fc7713b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
         <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_344ba6dbaa1ef08e54e89745fcdbb2d388d93481.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/surabhiagrawal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/surabhiagrawal/AndroidStudioProjects/android-ContactManagementSystem/app/build/intermediates/pre-dexed/debug/okio-1.6.0_ce7e791a2a402671a256246382d86f28fc7713b6.jar" />
     </item>
     <item
         is-multidex="false"

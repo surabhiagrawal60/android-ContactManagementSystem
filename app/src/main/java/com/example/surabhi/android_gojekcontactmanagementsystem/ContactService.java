@@ -16,6 +16,9 @@ public interface ContactService {
     @GET("contacts.json")
     Call<List<Contact>> contacts();
 
+    @GET("contacts/{id}.json")
+    Call<Contact> getUser(@Path("id") String id);
+
     public static final Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("http://gojek-contacts-app.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create())

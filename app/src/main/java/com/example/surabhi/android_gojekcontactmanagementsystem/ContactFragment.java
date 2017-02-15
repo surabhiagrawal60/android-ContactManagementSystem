@@ -2,6 +2,7 @@ package com.example.surabhi.android_gojekcontactmanagementsystem;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -63,10 +65,45 @@ public class ContactFragment extends Fragment implements SwipeRefreshLayout.OnRe
         contactList = (ListView)v.findViewById(R.id.contact_list);
         swipeLayout = (SwipeRefreshLayout) v.findViewById(R.id.swipe_container);
         swipeLayout.setOnRefreshListener(this);
+
         swipeLayout.setColorSchemeResources(android.R.color.holo_green_dark,
                 android.R.color.holo_red_dark,
                 android.R.color.holo_blue_dark,
                 android.R.color.holo_orange_dark);
+
+        contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Contact contactItem = adapter.getItem(position);
+
+                // Log.d(TAG,"ITEMPOSITION:" + position + "");
+                //Log.d(TAG, "POST OBJECT" + post.commentsUrl + "");
+                String contactID= contactItem.getId();
+
+                ConnectivityManager connMgr = (ConnectivityManager) getActivity()
+                        .getSystemService(Context.CONNECTIVITY_SERVICE);
+                NetworkInfo activeNetwork = connMgr.getActiveNetworkInfo();
+
+                boolean isConnected = activeNetwork != null &&
+                        activeNetwork.isConnectedOrConnecting();
+
+                if (contactID == null || !isConnected) {
+                    if(contactID == null ) {
+                        Toast.makeText(getActivity(), "No Contact", Toast.LENGTH_LONG).show();
+                    }
+                    else if(!isConnected){
+                        Toast.makeText(getActivity(), "Please check the internet connection and try again!", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Log.d(TAG,"ContactID"+ contactID);
+                    Intent i;
+                    i = new Intent(getActivity(), ContactDetail.class);
+                    // sending data to new activity
+                    i.putExtra("id", contactID);
+                    startActivity(i);
+                }
+            }
+        });
 
         return v;
     }
@@ -86,8 +123,11 @@ public class ContactFragment extends Fragment implements SwipeRefreshLayout.OnRe
         NetworkInfo activeNetwork = connMgr.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null &&
                 activeNetwork.isConnectedOrConnecting();
-        if(isConnected)
+        if(isConnected) {
+            Log.d(TAG,"Initialize Called");
             initialize();
+
+        }
         else
             Toast.makeText(getActivity(), "Please check the internet connection and try again!", Toast.LENGTH_LONG).show();
 
@@ -201,7 +241,6 @@ public class ContactFragment extends Fragment implements SwipeRefreshLayout.OnRe
 
 
                     try {
-                        int size = contacts.size();
                         contacts.addAll(getContactsFromServer());
 
 
@@ -254,4 +293,4 @@ public class ContactFragment extends Fragment implements SwipeRefreshLayout.OnRe
     }
 
 
-    }
+}
