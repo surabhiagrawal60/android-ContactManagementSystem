@@ -14,7 +14,10 @@
     tools:showIn="@layout/activity_all_contacts">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:visibility="invisible"
+        android:text="Internet Connection is Not Present"/>
+
 </RelativeLayout>
